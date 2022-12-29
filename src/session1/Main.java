@@ -54,6 +54,32 @@ public class Main {
             System.out.println("n: "+n);
             System.out.println("l: "+l);
             System.out.println("str: "+str);
+
+
+            //nhap 1 so nguyen n tu ban phim
+            //tinh tong S =1 +2 +3... +n
+            System.out.println("Nhap 1 so nguyen n tu ban phim: ");
+            int sn = sc.nextInt();
+
+            int S3 = 0;
+            for(int k=0;k<=sn;k++){
+                S3 = S3 +k;
+            }
+            System.out.println("tong S la: "+S3);
+
+            //kiem tra so nguyen to
+            int dem=0;
+            for(int i=1;i<=sn;i++){
+                if(sn % i == 0) {
+                    dem++;
+                }
+            }
+            if(dem==2){
+                System.out.println(S3+ " la so nguyen to: ");
+            }else{
+                System.out.println(S3+ " khong la so nguyen to: ");
+            }
+
         }
         static  int tinhTong(int a,int b){
             return a+b;
