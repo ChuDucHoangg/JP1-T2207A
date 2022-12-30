@@ -80,6 +80,73 @@ public class Main {
                 System.out.println(S3+ " khong la so nguyen to: ");
             }
 
+            //Nhập 1 số nguyên n, kiểm tra nó có phải số hoàn hảo hay không.
+            Scanner ab = new Scanner(System.in);
+            System.out.println("nhap vao tu ban phim mot so nguyen");
+            int a = ab.nextInt();
+
+            int sum=0;
+            for(int i=1;i<=a/2;i++){
+                if(a % i == 0){
+                    sum+=i;
+                }
+            }
+            if (sum==a){
+                System.out.println(a+ " la so hoan hao");
+            }else{
+                System.out.println(a+ " khong la so hoan hao");
+            }
+            //Nhập 1 số nguyên n, tìm số có vị trí thứ n của dãy Fibonaci.
+            Scanner cd = new Scanner(System.in);
+            System.out.println("nhap vao so nguyen n:");
+            int p = cd.nextInt();
+
+            if(p < 0){
+                System.out.println("so khong hop le!");
+            }else{
+                if(p == 0){
+                    System.out.println(" 0 ");
+                }
+                if(p == 1){
+                    System.out.println(" 1 ");
+                }
+                if(p >= 2){
+                    int fn = 0 , f0 = 0 , f1 = 1;
+                    for(int i=2;i<=p;i++){
+
+                        fn = f0 + f1;
+                        f0 = f1;
+                        f1 = fn;
+                    }
+                    System.out.println("so co vi tri thu n la: " +fn);
+                }
+            }
+            //Nhập 2 số nguyên, tìm ước chung lớn nhất và bội chung nhỏ nhất của 2 số đó.
+
+            //UCLN
+            Scanner ef = new Scanner(System.in);
+            System.out.println("nhap vao so thu nhat: ");
+            int j = ef.nextInt();
+            System.out.println("nhap vao so thu hai: ");
+            int k = ef.nextInt();
+            int ucln = UCLN(j,k);
+            int bcnn = BCNN(j,k);
+
+            System.out.println("uoc chung lon nhat la:" +ucln);
+            System.out.println("uoc chung lon nhat la:" +bcnn);
+        }
+        static int UCLN(int j, int k) {
+            while (j != k){
+                if(j > k ){
+                    j = j - k;
+                }else{
+                    k = k -j;
+                }
+            }
+            return j;
+        }
+        static  int BCNN(int j,int k) {
+            return (j*k)/UCLN(j,k);
         }
         static  int tinhTong(int a,int b){
             return a+b;
