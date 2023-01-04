@@ -77,5 +77,10 @@ public class Main {
         System.out.println("Chu vi tam giac la: "+tamGiac.tinhChuVi());
         System.out.println("Dien tich tam giac la: "+tamGiac.tinhDienTich());
 
+        //Xay dung lop phan so.
+        PhanSo p = new PhanSo();
+        p.nhapPS();
+        p.InPhanSo();
+        p.RutGonPS();
     }
 }
