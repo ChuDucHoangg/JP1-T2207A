@@ -46,4 +46,12 @@ public class PhanSo {
         }
         return t;
     }
+
+    //nghich dao phan so
+    public void NghichDaoPS() {
+        int nghichdao=tuso;
+        tuso=mauso;
+        mauso=nghichdao;
+        System.out.println("Phan so nghich dao la:" +mauso);
+    }
 }
