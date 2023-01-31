@@ -38,6 +38,7 @@ public class Main {
                         switch (cho) {
                             case 1:
                                 lh.nhapThongTinLop(sn);
+
                                 break;
                             case 2:
                                 lh.nhapThongTinLop(sn);
