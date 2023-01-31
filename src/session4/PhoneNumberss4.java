@@ -2,14 +2,14 @@ package session4;
 
 import java.util.ArrayList;
 
-public class PhoneNumber {
+public class PhoneNumberss4 {
     private String ten;
     private ArrayList<String> danhsach = new ArrayList<>();
 
-    public PhoneNumber(){
+    public PhoneNumberss4(){
     }
 
-    public PhoneNumber(String ten) {
+    public PhoneNumberss4(String ten) {
         this.ten = ten;
     }
 
