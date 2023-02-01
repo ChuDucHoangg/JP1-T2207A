@@ -9,8 +9,13 @@ public class PhoneNumber {
     public PhoneNumber() {
     }
 
-    public PhoneNumber(String name) {
+//    public PhoneNumber(String name) {
+//        this.name = name;
+//    }
+    public PhoneNumber(String name, String phone) {
         this.name = name;
+        this.danhsach = new ArrayList<>();
+        this.danhsach.add(phone);
     }
 
     public String getTen() {
